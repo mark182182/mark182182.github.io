@@ -1,32 +1,41 @@
 .header{
-background-color: #333333;
-padding: 20px;
-word-spacing: 20px;  
-text-align: right;
-margin: -1vw -21.5vh 0vw -21.5vh;
+    display:flex;
+    background-color: #333333;
+    align-items: center;
+    }
+
+.header-links{
+    padding: 10px;
+    margin-right: 10px;
+    width: 80%;
+    text-align: right;
 }
 
-.header .apertureSymbol{
-    position: fixed;
-    left: 10vw;
+.apertureSymbol{
+    padding: 10px;
+    width: 20%;
+    margin-left: 150px;
 }
 
 .headerLinkHome, .headerLinkWiki, .headerLinkGithub, .headerLinkLikedin{
     font-family: "Montserrat";
     color: deeppink;
     text-transform: uppercase;
-    font-weight: 200;
-
+    padding: 10px;
 }
 
 .headerLinkHome:hover, .headerLinkWiki:hover, .headerLinkGithub:hover, .headerLinkLikedin:hover{
     text-decoration: underline;
 }
+
 body{
-font-size: 140%;
-background-image: url("./topography.png");
-background-color: rgba(20, 100, 20, 0.18);
-padding: 0% 10% 0% 10%;
+    font-size: 140%;
+    background-image: url("./topography.png");
+    background-color: rgba(20, 100, 20, 0.18);
+    margin: 0px;
+}
+.mainText{
+    padding: 0% 10% 0% 10%;
 }
 p {
     font-family: "Montserrat"
