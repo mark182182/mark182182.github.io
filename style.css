@@ -47,10 +47,20 @@ font-family: Consolas, Courier;
 text-align: justify;
 }
 
+.nameCat{
+    display: flex;
+    align-items: center;
+}
+
 .ownName{
 font-weight: bolder;
 padding: 4% 0% 0% 0%;
 }
+
+.catPic{
+    width: 10%;
+    padding: 4%;
+    }
 
 .fullStackDev{
 color: deeppink;
@@ -62,6 +72,7 @@ text-shadow: #4e4e4e 0 2px;
 padding: 2%;
 word-spacing: 10px;
 }
+
 
 .techWiki{
 text-align:center;
