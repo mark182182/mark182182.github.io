@@ -1,95 +1,89 @@
-.header{
-    display:flex;
-    background-color: #333333;
-    align-items: center;
-    }
-
-.header-links{
-    padding: 10px;
-    margin-right: 10px;
-    width: 80%;
-    text-align: right;
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./topography.png);
+  background-color: rgba(20, 100, 20, 0.18);
 }
 
-.apertureSymbol{
-    padding: 10px;
-    width: 20%;
-    margin-left: 150px;
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #472929;
+  font-family: 'Poiret One', cursive;
+  width: 100%;
+  height: 100px;
 }
 
-.headerLinkHome, .headerLinkWiki, .headerLinkGithub, .headerLinkLikedin{
-    font-family: "Montserrat";
-    color: deeppink;
-    text-transform: uppercase;
-    padding: 10px;
+#nav-img-container {
+  display: flex;
+  margin-left: 40px;
 }
 
-.headerLinkHome:hover, .headerLinkWiki:hover, .headerLinkGithub:hover, .headerLinkLikedin:hover{
-    text-decoration: underline;
+#nav-items {
+  display: flex;
+  margin-right: 40px;
+  min-width: 25%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body{
-    font-size: 140%;
-    background-image: url("./topography.png");
-    background-color: rgba(20, 100, 20, 0.18);
-    margin: 0px;
-}
-.mainText{
-    padding: 0% 10% 0% 10%;
-}
-p {
-    font-family: "Montserrat"
+#nav-items * {
+  display: flex;
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 24px;
+  color: #FFFFFF;
 }
 
-.firstJustify
-{
-font-family: Consolas, Courier;
-text-align: justify;
+#nav-items *:hover {
+  opacity: 0.5;
 }
 
-.nameCat{
-    display: flex;
-    align-items: center;
+#nav-items *:active {
+  opacity: 0.1;
 }
 
-.ownName{
-font-weight: bolder;
-padding: 4% 0% 0% 0%;
+#content-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+  font-family: 'VT323', monospace;
 }
 
-.catPic{
-    width: 10%;
-    padding: 4%;
-    }
-
-.fullStackDev{
-color: deeppink;
+#content-holder * {
+  display: flex;
 }
 
-.divideSymbol{
-text-align: center;
-text-shadow: #4e4e4e 0 2px;
-padding: 2%;
-word-spacing: 10px;
+#title {
+  font-family: 'Poiret One', cursive;
 }
 
-
-.techWiki{
-text-align:center;
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #1B446E;
+  border-collapse: collapse;
+  border-radius: 75px;
+  overflow: hidden;
 }
 
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+.cat {
+  width: 4%;
+}
+
+@media screen and (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    height: 150px;
   }
-
-  @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  #navbar * {
+    margin: 0 auto;
+    flex-direction: column;
   }
+  #nav-items * {
+    margin: 0 auto;
+    margin-top: 2px;
+  }
+}
